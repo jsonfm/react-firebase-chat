@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html, body {
+    @apply bg-dark text-white;
+  }
+
+  .container {
+    @apply max-w-[1200px] px-4 mx-auto;
+  }
+
+  .input {
+    @apply bg-transparent outline outline-white rounded-md border-none px-4 py-2;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md transition-[200ms] flex justify-center;
+  }
+
+  .btn:hover {
+    @apply bg-white text-neutral;
+  }
+
+  .btn-primary {
+    @apply bg-primary;
+  }
+}
